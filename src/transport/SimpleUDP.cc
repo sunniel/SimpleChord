@@ -85,16 +85,9 @@ void SimpleUDP::handleOutgoingMessage(cMessage* packet) {
                 dynamic_cast<cPacket*>(packet) != NULL ?
                         dynamic_cast<cPacket*>(packet)->getBitLength() : 0;
         if (msgSize > 0) {
-            delay = ceil((msgSize) / (double) MTU) * mtu_delay;
+            // delay = propagation delay + transmission delay
+            delay = msgSize / BW + mtu_delay;
         }
-
-//        EV << "distance: " << distance << endl;
-//        EV << "Dmin: " << Dmin << endl;
-//        EV << "Dcomm: " << Dcomm << endl;
-//        EV << "Dvar: " << Dvar << endl;
-//        EV << "mtu_delay: " << mtu_delay << endl;
-//        EV << "mesage size: " << msgSize << endl;
-//        EV << "delay: " << delay << endl;
 
         if (uniform(0, 1) > pktLossRate) {
             cSimpleModule::sendDirect(packet, delay, 0,
