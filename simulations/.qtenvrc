@@ -1,0 +1,43 @@
+[RunModeProfiles]
+run-playback-speed=100
+run-min-playback-speed=0.01
+run-max-playback-speed=100
+run-min-animation-speed=nan
+run-max-animation-speed=nan
+fast-playback-speed=1000
+fast-min-playback-speed=1
+fast-max-playback-speed=1e+6
+fast-min-animation-speed=nan
+fast-max-animation-speed=nan
+
+[Inspector-0]
+object=Overlay.contentDistributor.id
+classname=std::string
+id=@Variant(\0\0\0\x81\xff\xff\xff\xff\xff\xff\xff\xff)
+type=1
+geom=@Rect(835 412 400 300)
+fullscreen=false
+
+[Inspector-1]
+object=Overlay.contentDistributor.value
+classname=std::string
+id=@Variant(\0\0\0\x81\xff\xff\xff\xff\xff\xff\xff\xff)
+type=1
+geom=@Rect(1231 312 400 300)
+fullscreen=false
+
+[Inspector-2]
+object=Overlay.globalObserver.globalNodeList.chords
+classname="std::map<unsigned long,IPvXAddress>"
+id=@Variant(\0\0\0\x81\xff\xff\xff\xff\xff\xff\xff\xff)
+type=1
+geom=@Rect(51 253 401 564)
+fullscreen=false
+
+[Inspector-3]
+object=Overlay.globalObserver.globalNodeList.peerStorage.getPeerHashMap()
+classname="unordered_map<IPvXAddress,BootstrapEntry>"
+id=@Variant(\0\0\0\x81\xff\xff\xff\xff\xff\xff\xff\xff)
+type=1
+geom=@Rect(1062 72 431 554)
+fullscreen=false
