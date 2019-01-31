@@ -126,3 +126,8 @@ transport/: contains the transport modules used by hosts
 
 # References:
 [1] Stoica, I., Morris, R., Karger, D., Kaashoek, M. F., Balakrishnan, H. "Chord: A scalable peer-to-peer lookup service for internet applications"; *Proc. SIGCOMM '01*, ACM, New York (2001), 149-160. 
+
+---
+
+# Contacts: 
+Daniel Shen [daniel.shen@connect.umac.mo](daniel.shen@connect.umac.mo)
