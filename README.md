@@ -82,15 +82,15 @@ transport/: contains the transport modules used by hosts
 \# cycle of network churn, referring to UniformChurnGenerator  
 **.churnGenerator.churn_cycle = 10s
 
-\# node departure/arrival rate, used by UniformChurnGenerator
-**.churnGenerator.depart_rate = 0.1
+\# node departure/arrival rate, used by UniformChurnGenerator  
+**.churnGenerator.depart_rate = 0.1  
 **.churnGenerator.arrival_rate = 0.1
 
-\# Maximal/minimal overlay size, used by UniformChurnGenerator
-**.churnGenerator.overlay_size_max = 500
+\# Maximal/minimal overlay size, used by UniformChurnGenerator  
+**.churnGenerator.overlay_size_max = 500  
 **.churnGenerator.overlay_size_min = 10
 
-\# Chord lookup request generation cycle
+\# Chord lookup request generation cycle  
 **.trafficGenerator.traffic_cycle = 5000ms
 
 \# chord maintenance cycle to fix finger tables and successor lists, called by each chord node
